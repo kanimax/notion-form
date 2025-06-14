@@ -15,11 +15,11 @@ export default function Home() {
     console.log("📤 Submitting form data:", formData);
 
     try {
-      const res = await fetch("http://localhost:3002/api/submit", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify(formData),
-      });
+      const res = await fetch("/api/submit", {
+  method: "POST",
+  headers: { "Content-Type": "application/json" },
+  body: JSON.stringify(formData),
+});
       if (res.ok) setSubmitted(true);
     } catch (err) {
       console.error("Submission error:", err);
