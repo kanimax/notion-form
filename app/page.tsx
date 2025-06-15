@@ -20,7 +20,9 @@ export default function Home() {
   headers: { "Content-Type": "application/json" },
   body: JSON.stringify(formData),
 });
-      if (res.ok) setSubmitted(true);
+
+form submission)
+bmitted(true);
     } catch (err) {
       console.error("Submission error:", err);
     }
