@@ -23,7 +23,8 @@ export default function Home() {
 
 setSubmitted(true);
 
-bmitted(true);
+setSubmitted(true);
+
     } catch (err) {
       console.error("Submission error:", err);
     }
