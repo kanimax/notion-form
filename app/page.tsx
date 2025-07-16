@@ -21,7 +21,8 @@ export default function Home() {
   body: JSON.stringify(formData),
 });
 
-form submission)
+setSubmitted(true);
+
 bmitted(true);
     } catch (err) {
       console.error("Submission error:", err);
