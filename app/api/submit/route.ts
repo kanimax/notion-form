@@ -61,6 +61,7 @@ export async function GET() {
   const databaseId = process.env.NOTION_DATABASE_ID;
 
   // 結果格納用
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
   let notionResult: any = null;
   let notionError = null;
   let databaseInfo = null;
@@ -90,12 +91,15 @@ export async function GET() {
         integrationInfo = {
           name: user.name,
           type: user.type,
+          // eslint-disable-next-line @typescript-eslint/no-explicit-any
           bot: (user as any).bot || false
         };
+      // eslint-disable-next-line @typescript-eslint/no-explicit-any
       } catch (e: any) {
         integrationInfo = { error: e.message || 'Failed to get integration info' };
       }
 
+    // eslint-disable-next-line @typescript-eslint/no-explicit-any
     } catch (e: any) {
       notionError = e.message || String(e);
     }
