@@ -38,9 +38,9 @@ setSubmitted(true);
           <input
             className="border px-4 py-2 rounded"
             type="text"
-            name="name"
+            name="name"z
             placeholder="Your name"
-            value={formData.name}
+            value={.name}
             onChange={handleChange}
             required
           />
