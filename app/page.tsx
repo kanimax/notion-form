@@ -22,9 +22,6 @@ export default function Home() {
 });
 
 setSubmitted(true);
-
-setSubmitted(true);
-
     } catch (err) {
       console.error("Submission error:", err);
     }
